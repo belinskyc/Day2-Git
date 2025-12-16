@@ -11,7 +11,9 @@ theme_ugly = function()
           plot.background = element_rect(fill = "lightgreen"),
           plot.title = element_text(hjust = 0.45),
           plot.subtitle = element_text(hjust = 0.42),
-          axis.text = element_text(color="red", family="mono", size=9));
+          axis.text = element_text(color="blue", 
+                                   family="mono", 
+                                   size=9));
   
   ### return newTheme to the caller
   ##  You could take this line out -- but it is bad programming practice...
@@ -24,7 +26,7 @@ modifyGeoms = function()
                                     fill = "black"));
   update_geom_defaults("point", list(color = "green"));
   update_geom_defaults("smooth", list(color = "red",
-                                      linetype=3,
+                                      linetype=4,
                                       linewidth=2,
                                       fill="lightblue"));
 }
