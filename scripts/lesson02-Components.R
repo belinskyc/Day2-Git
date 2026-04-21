@@ -1,13 +1,8 @@
-rm(list=ls());                         # clear Environment tabfdsdfhgfd
-library(package=ggplot2);              # get the GGPlot package
 
 # read in CSV file and save the content to weatherData
 weatherData = read.csv(file="data/Lansing2016NOAA.csv");
 
-#### Part 1: Create a scatterplot ####
-plot1 = ggplot( data=weatherData ) +
-  geom_point( mapping=aes(x=avgTemp, y=relHum) );
-plot(plot1);
+
 
 #### Part 2: Same scatterplot without argument names ####
 #   From here on out, this class uses argument names! ####
