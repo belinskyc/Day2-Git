@@ -1,4 +1,4 @@
-rm(list=ls());                         # clear Environment tab
+rm(list=ls());                         # clear Environment tabfdsdfhgfd
 library(package=ggplot2);              # get the GGPlot package
 
 # read in CSV file and save the content to weatherData
